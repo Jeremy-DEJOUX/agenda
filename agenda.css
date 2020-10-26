@@ -1,22 +1,23 @@
 html{
     width: 100%;
-    height: 100%;
 }
 
 body{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin: 0px;
     font-family: 'Josefin Sans', cursive;
+    background: url("Images/agenda_bureau.jpg") no-repeat center center;
+    background-size: cover;
 
 }
 
 header{
-    margin:20px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 main{
@@ -28,67 +29,72 @@ main{
 
 
 
-.URGENT{
-    background-color: red;
-    animation: click 1.5s infinite;
-}
 
-@keyframes click{
-    0%{background-color: red;}
-    50%{background-color: rgb(190, 235, 233);}
-    100%{background-color: red;}
-}
 
-.BUY{
-    text-decoration: line-through;
-    background-color: #f6eec7;
-}
-.FRIEND{
-    background-color: greenyellow;
-    font-weight: bold;
-}
-.NORMAL{
-
-}
-.GRANDE_LISTE{
+.AGENDA{
     border-collapse: collapse;
-    width: 75%;
-    margin-top: 20px;
+    background-color: rgba(200,200,200,0.7);
 }
 
 thead {
     font-size: 20px;
     text-decoration: underline;
-    color: rgb(255, 182, 185);
+    color: black;
+}
+th{
+  padding: 20px;
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
 }
 tfoot{
-    font-size: 20px;
-    text-decoration: underline;
-    color: rgb(255, 182, 185);
-}
-tr{
-    margin: 0px;
-}
-
-td{
-    border: 1px solid black;
-    padding: 0px;
-    text-align: center;
-    padding: 20px;
-}
-
-.img1{
-    width: 200px;
-    margin: 0px;
-    background-color: white;
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
 }
 
 
-
-table a{
-    border: 1px solid black;
-    padding: 10px;;
+.Réunion{
+    background-color: rgba(250,0,0, 0.7);
+    animation: click 1.5s infinite;
 }
-table a:hover{
-    background-color: rgb(255, 182, 185);
+
+@keyframes click{
+    0%{background-color: rgba(250,0,0, 0.7);}
+    50%{background-color: rgba(200,200,200,0.7);}
+    100%{background-color: rgba(250,0,0, 0.7);}
+}
+
+.School{
+  background-color: rgba(0, 0, 200, 0.5);
+}
+.Lunch{
+  background-color: rgba(0,200,0,0.5)
+}
+.ELODIE{
+  background-color: rgba(200,200,0,0.5);
+}
+.Minato{
+  background-color: rgba(243, 156, 18, 0.5)
+}
+.Projet{
+  background-color: rgba(142, 68, 173,0.5)
+}
+.Ciné{
+  background-color: rgba(39, 55, 70,0.5)
+}
+.Voyage{
+  background-color: rgba(93, 173, 226,0.8)
+}
+
+
+.School:hover, .Lunch:hover, .ELODIE:hover, .Minato:hover, .Projet:hover, .Ciné:hover, .Voyage:hover{
+  background-color: rgba(20,20,20,0.8);
+  color: rgba(200,200,200,1);
+  font-weight: bold;
+  transform: scale(1.3);
+  transition: all 1s;
 }
