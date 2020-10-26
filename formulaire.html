@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="agenda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <title>Ajout d'Evenement</title>
+</head>
+<body class="Formulaire1">
+    <header class="FORMULAIRE_header">
+      <h1>Ajout d'un évenement</h1>
+    </header>
+
+    <main class="FORMULAIRE_main">
+        <form method="POST" class="Form1">
+            <div class="Name">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div class="Date">
+              <label for="Date">Date</label>
+              <input type="date" id="Date" name="Date" value="">
+            </div>
+            <div class="Heure">
+                <label for="Heure">Heure</label>
+                <input type="number" id="Heure" name="Heure">
+            </div>
+            <div class="Categorie">
+                <label id="Categorie">Catégorie :</label>
+                <select>
+                    <optgroup label="Categorie">
+                        <option>Ecole Elodi</option>
+                        <option>Ecole Minato</option>
+                        <option>Réunion</option>
+                        <option>Volley</option>
+                        <option>Tennis</option>
+                        <option>Projet</option>
+                        <option>Autre</option>
+                    </optgroup>
+                </select>
+            </div>
+            <input type="button" onclick=window.location.href="agenda.html" value=Envoyer>
+        </form>
+    </main>
+
+    <footer class="FORMULAIRE_footer">
+      <h1>Agenda</h1>
+    </footer>
+</body>
+</html>

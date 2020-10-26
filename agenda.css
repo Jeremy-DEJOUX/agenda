@@ -2,13 +2,13 @@ html{
     width: 100%;
 }
 
-body{
+.AGENDA_body{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0px;
-    font-family: 'Josefin Sans', cursive;
+    font-family: 'Righteous', cursive;
     background: url("Images/agenda_bureau.jpg") no-repeat center center;
     background-size: cover;
 
@@ -26,14 +26,16 @@ main{
     justify-content: space-around;
     align-items: center;
 }
-
-
-
-
-
 .AGENDA{
     border-collapse: collapse;
     background-color: rgba(200,200,200,0.7);
+}
+.Lien_ajout{
+  font-size: 18px;
+  margin: 20px;
+}
+.Lien_ajout a{
+  color: white;
 }
 
 thead {
@@ -80,9 +82,7 @@ tfoot{
 .Minato{
   background-color: rgba(243, 156, 18, 0.5)
 }
-.Projet{
-  background-color: rgba(142, 68, 173,0.5)
-}
+
 .Ciné{
   background-color: rgba(39, 55, 70,0.5)
 }
@@ -91,10 +91,68 @@ tfoot{
 }
 
 
-.School:hover, .Lunch:hover, .ELODIE:hover, .Minato:hover, .Projet:hover, .Ciné:hover, .Voyage:hover{
+.School:hover, .Lunch:hover, .ELODIE:hover, .Minato:hover, .Ciné:hover, .Voyage:hover{
   background-color: rgba(20,20,20,0.8);
   color: rgba(200,200,200,1);
   font-weight: bold;
   transform: scale(1.3);
   transition: all 1s;
+}
+
+
+
+/* ======================================FORMULAIRE=================================== */
+
+/* PAGE FORMULAIRE */
+.Formulaire1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  font-family: 'Grenze Gotisch', cursive;
+  background: url("Images/bridge.jpg") no-repeat center center;
+  background-size: cover;
+}
+.FORMULAIRE_header h1{
+  color: black;
+  text-align: center;
+}
+.Form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 0.7);
+    color: white;
+    padding: 50px;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.Date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.Heure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.Categorie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.FORMULAIRE_footer h1{
+  color: black;
+  text-align: center;
 }
