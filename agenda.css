@@ -1,0 +1,94 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    font-family: 'Josefin Sans', cursive;
+
+}
+
+header{
+    margin:20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.URGENT{
+    background-color: red;
+    animation: click 1.5s infinite;
+}
+
+@keyframes click{
+    0%{background-color: red;}
+    50%{background-color: rgb(190, 235, 233);}
+    100%{background-color: red;}
+}
+
+.BUY{
+    text-decoration: line-through;
+    background-color: #f6eec7;
+}
+.FRIEND{
+    background-color: greenyellow;
+    font-weight: bold;
+}
+.NORMAL{
+
+}
+.GRANDE_LISTE{
+    border-collapse: collapse;
+    width: 75%;
+    margin-top: 20px;
+}
+
+thead {
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(255, 182, 185);
+}
+tfoot{
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(255, 182, 185);
+}
+tr{
+    margin: 0px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+.img1{
+    width: 200px;
+    margin: 0px;
+    background-color: white;
+}
+
+
+
+table a{
+    border: 1px solid black;
+    padding: 10px;;
+}
+table a:hover{
+    background-color: rgb(255, 182, 185);
+}
